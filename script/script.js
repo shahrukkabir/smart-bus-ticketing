@@ -29,16 +29,7 @@ function addToCart(seat, seatClass, price) {
       alert("You can only select up to 4 seats.");
     }
   } else {
-    selectedSeats.splice(index, 1);
-    selectedSeatsCount--;
 
-    seatButton.style.backgroundColor = "#E5E7EB";
-
-    const cartChildren = cart.children;
-    for (let i = 0; i < cartChildren.length; i++) {
-      const tempChild = cartChildren[i];
-      if (tempChild.innerText.includes(seat)) {
-        tempChild.remove();
         break;
       }
     }
